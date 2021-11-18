@@ -13,15 +13,16 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select id, nom, prenom form Personne";
+            commande.CommandText = "select ID, nom, prenom form Personne";
             var reader = commande.ExecuteReader();
 
             var listeDePersonnes = new List<Personne_DAL>();
 
             while (reader.Read())
             {
-                var p = new Personne_DAL(reader.GetString(0),
-                                        reader.GetString(1));
+                var p = new Personne_DAL(reader.GetInt32(0),
+                                        reader.GetString(1),
+                                        reader.GetString(2));
 
                 listeDePersonnes.Add(p);
             }
@@ -35,7 +36,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select id, nom, prenom from Personne where id=@ID";
+            commande.CommandText = "select ID, nom, prenom from Personne where ID=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
 
             var reader = commande.ExecuteReader();
@@ -60,7 +61,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select id, nom, prenom form Personne where id=@ID";
+            commande.CommandText = "select ID, nom, prenom form Personne where ID=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
             var reader = commande.ExecuteReader();
 
@@ -99,7 +100,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "update Personne SET nom = @Nom, prenom = @Prenom where id = @ID";
+            commande.CommandText = "update Personne SET nom = @Nom, prenom = @Prenom where ID = @ID";
             commande.Parameters.Add(new SqlParameter("@Nom", Personne.Nom));
             commande.Parameters.Add(new SqlParameter("@Prenom", Personne.Prenom));
             commande.Parameters.Add(new SqlParameter("@ID", Personne.ID));
@@ -121,7 +122,7 @@ namespace ProjetSymfoCS.DAL
         public override void Delete(Personne_DAL Personne)
         {
             CreerConnectionCommande();
-            commande.CommandText = "delete from Personne where id = @ID";
+            commande.CommandText = "delete from Personne where ID = @ID";
             commande.Parameters.Add(new SqlParameter("@ID", Personne.ID));
             var reader = commande.ExecuteReader();
 
