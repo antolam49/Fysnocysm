@@ -16,6 +16,19 @@ namespace ProjetSymfoCS.DAL
         public Personne_DAL(string nom, string prenom) => (Nom, Prenom) = (nom, prenom);
         public Personne_DAL(int id, string nom, string prenom) => (ID, Nom, Prenom) = (id, nom, prenom);
 
+        internal void Insert(SqlConnection connexion)
+        {
+            using (var commande = new SqlCommand())
+            {
+                commande.Connection = connexion;
+                commande.CommandText = "insert into Personne(nom, prenom)" + " values(@Nom,@Prenom)";
+
+                commande.Parameters.Add(new SqlParameter("@Nom", Nom));
+                commande.Parameters.Add(new SqlParameter("@Prenom", Prenom));
+
+                commande.ExecuteNonQuery();
+            }
+        }
 
     }
 }
