@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8c0f024c-ae66-49d9-94d4-6c26cd528c7f": {
+      "ProjectGuid": "8c0f024c-ae66-49d9-94d4-6c26cd528c7f",
+      "DisplayName": "ProjetSymfoCS.Console",
+      "ColorIndex": 0
+    },
+    "d303ecf5-fd37-4f02-acf7-3252f3479cc0": {
+      "ProjectGuid": "d303ecf5-fd37-4f02-acf7-3252f3479cc0",
+      "DisplayName": "ProjetSymfoCS.DAL",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
