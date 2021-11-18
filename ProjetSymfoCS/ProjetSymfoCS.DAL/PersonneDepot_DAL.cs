@@ -13,7 +13,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, nom, prenom form Personne";
+            commande.CommandText = "select ID, nom, prenom from Personne";
             var reader = commande.ExecuteReader();
 
             var listeDePersonnes = new List<Personne_DAL>();
@@ -61,7 +61,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, nom, prenom form Personne where ID=@ID";
+            commande.CommandText = "select ID, nom, prenom from Personne where ID=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
             var reader = commande.ExecuteReader();
 

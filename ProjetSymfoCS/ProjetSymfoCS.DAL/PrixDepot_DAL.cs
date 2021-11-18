@@ -13,7 +13,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, motant, idPersonne, idSoiree form Prix";
+            commande.CommandText = "select ID, motant, idPersonne, idSoiree from Prix";
             var reader = commande.ExecuteReader();
 
             var listeDePrixs = new List<Prix_DAL>();
@@ -37,7 +37,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, motant, idPersonne, idSoiree Prix where ID=@ID";
+            commande.CommandText = "select ID, motant, idPersonne, idSoiree from Prix where ID=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
 
             var reader = commande.ExecuteReader();
@@ -63,7 +63,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, motant, idPersonne, idSoiree form Prix where id=@ID";
+            commande.CommandText = "select ID, motant, idPersonne, idSoiree from Prix where ID=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
             var reader = commande.ExecuteReader();
 
