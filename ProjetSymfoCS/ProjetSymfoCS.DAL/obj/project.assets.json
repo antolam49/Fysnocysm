@@ -906,9 +906,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS.DAL.csproj",
-      "projectName": "ProjetSymfoCS.DAL",
-      "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj",
+      "projectName": "ProjetSymfoCS_DAL",
+      "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj",
       "packagesPath": "C:\\Users\\antol\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\obj\\",
       "projectStyle": "PackageReference",

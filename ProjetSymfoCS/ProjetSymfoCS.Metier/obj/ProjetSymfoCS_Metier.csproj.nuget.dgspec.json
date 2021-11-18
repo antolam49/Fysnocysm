@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS.Metier.csproj": {}
+    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS.DAL.csproj": {
+    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS.DAL.csproj",
-        "projectName": "ProjetSymfoCS.DAL",
-        "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj",
+        "projectName": "ProjetSymfoCS_DAL",
+        "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj",
         "packagesPath": "C:\\Users\\antol\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\obj\\",
         "projectStyle": "PackageReference",
@@ -78,12 +78,12 @@
         }
       }
     },
-    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS.Metier.csproj": {
+    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS.Metier.csproj",
-        "projectName": "ProjetSymfoCS.Metier",
-        "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS.Metier.csproj",
+        "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj",
+        "projectName": "ProjetSymfoCS_Metier",
+        "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj",
         "packagesPath": "C:\\Users\\antol\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\obj\\",
         "projectStyle": "PackageReference",
@@ -108,8 +108,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS.DAL.csproj": {
-                "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS.DAL.csproj"
+              "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj": {
+                "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj"
               }
             }
           }
