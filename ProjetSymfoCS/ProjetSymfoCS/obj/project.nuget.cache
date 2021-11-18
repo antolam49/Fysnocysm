@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KSOx2qQbPaNLLnG8gbebbJyyf381cCm8I7WQsj9NZ1ra5QcyEafu9x56UuuZ0D8XL0wVdm3FS+BXayJ9BYGHEw==",
+  "dgSpecHash": "YHc0xL49a4a9SeIb4AN6NN9FY0+J95d7YgSNzvTvvFB00QYPbBLDGxmHaNBn2AmmU3aoCXYSgdWSpKN/+QcXkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\antol\\source\\repos\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS.csproj",
+  "projectFilePath": "C:\\Users\\antol\\source\\repos\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS.Console.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

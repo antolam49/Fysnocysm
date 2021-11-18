@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\antol\\source\\repos\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS.csproj",
-      "projectName": "ProjetSymfoCS",
-      "projectPath": "C:\\Users\\antol\\source\\repos\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS.csproj",
+      "projectUniqueName": "C:\\Users\\antol\\source\\repos\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS.Console.csproj",
+      "projectName": "ProjetSymfoCS.Console",
+      "projectPath": "C:\\Users\\antol\\source\\repos\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS.Console.csproj",
       "packagesPath": "C:\\Users\\antol\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\antol\\source\\repos\\ProjetSymfoCS\\ProjetSymfoCS\\ProjetSymfoCS\\obj\\",
       "projectStyle": "PackageReference",
