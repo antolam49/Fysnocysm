@@ -11,3 +11,16 @@ C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ref\ProjetSymfoCS_DAL.dll
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.pdb
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\bin\Debug\net6.0\appsettings.json
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\bin\Debug\net6.0\appsettings.json
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\bin\Debug\net6.0\ProjetSymfoCS_DAL.deps.json
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\bin\Debug\net6.0\ProjetSymfoCS_DAL.dll
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\bin\Debug\net6.0\ref\ProjetSymfoCS_DAL.dll
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\bin\Debug\net6.0\ProjetSymfoCS_DAL.pdb
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.csproj.AssemblyReference.cache
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.AssemblyInfoInputs.cache
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.AssemblyInfo.cs
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.csproj.CoreCompileInputs.cache
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.dll
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ref\ProjetSymfoCS_DAL.dll
+D:\C#\Synfo\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.pdb
