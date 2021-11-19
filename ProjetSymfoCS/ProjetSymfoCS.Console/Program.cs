@@ -33,7 +33,7 @@ namespace ProjetSymfoCS_Console
                     Console.WriteLine("Entrez le numero de votre soiree: ");
                     string num = Console.ReadLine();
                     int idSoiree = Int32.Parse(num);
-                    afficherPersonnes();
+                    afficherPersonnes(idSoiree);
                     Console.WriteLine("Qui etes vous ? Entrez votre numero: ");
                     string numP = Console.ReadLine();
                     int idPersonne = Int32.Parse(numP);
@@ -59,9 +59,9 @@ namespace ProjetSymfoCS_Console
         {
             CreationSoiree.GetAllMetier();
         }
-        public static void afficherPersonnes()
+        public static void afficherPersonnes(int id)
         {
-            AjoutPersonne.GetAll();
+            AjoutPersonne.GetAll(id);
         }
         
         public static void menuEntrerPrix(int idSoiree, int idPersonne)

@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace ProjetSymfoCS.DAL
 {
-    internal class PrixDepot_DAL : Depot_DAL<Prix_DAL>
+    public class PrixDepot_DAL : Depot_DAL<Prix_DAL>
     {
         public override List<Prix_DAL> GetAll()
         {

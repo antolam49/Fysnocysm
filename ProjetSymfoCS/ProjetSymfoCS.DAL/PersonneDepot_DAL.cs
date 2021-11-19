@@ -33,11 +33,11 @@ namespace ProjetSymfoCS.DAL
             return listeDePersonnes;
         }
 
-        public List<Personne_DAL> GetAllByID(int ID)
+        public List<Personne_DAL> GetAllByIDSoiree(int ID)
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, nom, prenom, idSoiree from Personne where ID=@ID";
+            commande.CommandText = "select ID, nom, prenom, idSoiree from Personne where idSoiree=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
 
             var reader = commande.ExecuteReader();
