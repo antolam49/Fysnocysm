@@ -14,11 +14,11 @@ namespace ProjetSymfoCS.Metier
         public int IDPersonne { get; set; }
 
         public Prix_Metier(float montant, int idSoiree, int idPersonne )
-            => (Montant, IDSoiree, IDPersonne) = (montant, idSoiree, idPersonne);
+            => (Montant, IDPersonne, IDSoiree) = (montant, idPersonne, idSoiree);
 
         public void InsertIntoBDD()
         {
-            Prix_DAL prix = new Prix_DAL(Montant, IDSoiree, IDPersonne);
+            Prix_DAL prix = new Prix_DAL(Montant, IDPersonne, IDSoiree);
             PrixDepot_DAL prixD =  new DAL.PrixDepot_DAL();
             prixD.Insert(prix);
         }
