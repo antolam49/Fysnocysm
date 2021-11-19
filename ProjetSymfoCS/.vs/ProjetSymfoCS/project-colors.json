@@ -8,9 +8,29 @@
     },
     "d303ecf5-fd37-4f02-acf7-3252f3479cc0": {
       "ProjectGuid": "d303ecf5-fd37-4f02-acf7-3252f3479cc0",
-      "DisplayName": "ProjetSymfoCS.DAL",
+      "DisplayName": "ProjetSymfoCS_DAL",
       "ColorIndex": 1
+    },
+    "70246dd2-854d-4bab-a31a-4bb8ef40af6d": {
+      "ProjectGuid": "70246dd2-854d-4bab-a31a-4bb8ef40af6d",
+      "DisplayName": "ProjetSymfoCS_Metier",
+      "ColorIndex": 2
+    },
+    "83ff0c0d-69f7-4fd1-8fbc-c15e1493016c": {
+      "ProjectGuid": "83ff0c0d-69f7-4fd1-8fbc-c15e1493016c",
+      "DisplayName": "ProjetSymfoCS_Console",
+      "ColorIndex": 3
+    },
+    "7ceb4530-dd05-46dd-b129-802f3f76e3ea": {
+      "ProjectGuid": "7ceb4530-dd05-46dd-b129-802f3f76e3ea",
+      "DisplayName": "ProjetSymfoCS_Web",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 5
 }
