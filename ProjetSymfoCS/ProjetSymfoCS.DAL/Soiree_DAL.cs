@@ -7,27 +7,36 @@ using System.Data.SqlClient;
 
 namespace ProjetSymfoCS.DAL
 {
-    internal class Soiree_DAL
+    public class Soiree_DAL
     {
         public int ID { get; set; }
         public string Lieu{ get; set; }
         public DateTime Date { get; set; }
-
+        SqlConnection connexion = new SqlConnection();
         public Soiree_DAL(string lieu, DateTime date) => (Lieu, Date) = (lieu, date);
 
         public Soiree_DAL(int id, string lieu, DateTime date) => (ID, Lieu, Date) = (id, lieu, date);
 
-        internal void Insert(SqlConnection connexion)
+        public void Insert()
         {
-            using (var commande = new SqlCommand())
+            var chaineDeConnexion = "Data Source=localhost;Initial Catalog=Fysnocysm;Integrated Security=True";
+            using (var connexion = new SqlConnection(chaineDeConnexion))
             {
-                commande.Connection = connexion;
-                commande.CommandText = "insert into Soiree(lieu, date)" + " values(@Lieu, @Date)";
+                connexion.Open();
+                using (var commande = new SqlCommand())
+                {
+                    commande.Connection = connexion;
+                    commande.CommandText = "insert into Soiree(lieu, date)" + " values(@Lieu, @Date)";
 
-                commande.Parameters.Add(new SqlParameter("@Lieu", Lieu));
-                commande.Parameters.Add(new SqlParameter("@Date", Date));
+                    commande.Parameters.Add(new SqlParameter("@Lieu", Lieu));
+                    commande.Parameters.Add(new SqlParameter("@Date", Date));
 
-                commande.ExecuteNonQuery();
+
+                    commande.ExecuteNonQuery();
+
+
+                }
+                connexion.Close();
             }
         }
     }

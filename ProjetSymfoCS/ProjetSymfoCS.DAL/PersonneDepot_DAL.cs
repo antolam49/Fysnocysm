@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjetSymfoCS.DAL
 {
-    class PersonneDepot_DAL : Depot_DAL<Personne_DAL>
+    public class PersonneDepot_DAL : Depot_DAL<Personne_DAL>
     {
         public override List<Personne_DAL> GetAll()
         {

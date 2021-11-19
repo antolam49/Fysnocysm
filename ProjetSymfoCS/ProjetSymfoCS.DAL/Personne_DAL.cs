@@ -13,20 +13,30 @@ namespace ProjetSymfoCS.DAL
        public string Nom { get; set; }
        public string Prenom { get; set; }
 
+        SqlConnection connexion = new SqlConnection();
         public Personne_DAL(string nom, string prenom) => (Nom, Prenom) = (nom, prenom);
         public Personne_DAL(int id, string nom, string prenom) => (ID, Nom, Prenom) = (id, nom, prenom);
 
-        internal void Insert(SqlConnection connexion)
+        public void Insert()
         {
-            using (var commande = new SqlCommand())
+            var chaineDeConnexion = "Data Source=localhost;Initial Catalog=Fysnocysm;Integrated Security=True";
+            using (var connexion = new SqlConnection(chaineDeConnexion))
             {
-                commande.Connection = connexion;
-                commande.CommandText = "insert into Personne(nom, prenom)" + " values(@Nom,@Prenom)";
+                connexion.Open();
+                using (var commande = new SqlCommand())
+                {
+                    commande.Connection = connexion;
+                    commande.CommandText = "insert into Personne(nom, prenom)" + " values(@Nom,@Prenom); SELECT SCOPE_IDENTITY()";
 
-                commande.Parameters.Add(new SqlParameter("@Nom", Nom));
-                commande.Parameters.Add(new SqlParameter("@Prenom", Prenom));
+                    commande.Parameters.Add(new SqlParameter("@Nom", Nom));
+                    commande.Parameters.Add(new SqlParameter("@Prenom", Prenom));
 
-                commande.ExecuteNonQuery();
+                    
+                    commande.ExecuteNonQuery();
+
+                    
+                }
+                connexion.Close();
             }
         }
 
