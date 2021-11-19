@@ -10,3 +10,4 @@ C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.dll
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ref\ProjetSymfoCS_DAL.dll
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\obj\Debug\net6.0\ProjetSymfoCS_DAL.pdb
+C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.DAL\bin\Debug\net6.0\appsettings.json

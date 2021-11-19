@@ -16,11 +16,7 @@ namespace ProjetSymfoCS.Metier
 
         public Personne_Metier(string nom, string prenom) => (Nom, Prenom) = (nom, prenom);
 
-        public void InsertIntoBDD()
-        {
-            Personne_DAL personne = new Personne_DAL(Nom, Prenom);
-            personne.Insert();
-        }
+        
         public void GetAll()
         {
             PersonneDepot_DAL personne = new PersonneDepot_DAL();

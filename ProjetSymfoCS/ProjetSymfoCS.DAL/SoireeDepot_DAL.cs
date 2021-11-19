@@ -13,7 +13,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, lieu, date from Soiree";
+            commande.CommandText = "select ID, lieu, date  from Soiree";
             var reader = commande.ExecuteReader();
 
             var listeDeSoirees = new List<Soiree_DAL>();
@@ -93,6 +93,13 @@ namespace ProjetSymfoCS.DAL
             var ID = Convert.ToInt32((decimal)commande.ExecuteScalar());
 
             Soiree.ID = ID;
+            var depotSoiree = new PersonneDepot_DAL();
+            foreach (var item in Soiree.Personnes)
+            {
+                item.IDSoiree = ID;
+                depotSoiree.Insert(item);
+            }
+
 
             DetruireConnexion();
 

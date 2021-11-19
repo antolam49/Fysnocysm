@@ -17,7 +17,7 @@ namespace ProjetSymfoCS_Console
             string prenom = Console.ReadLine();
 
             Personne_Metier personne = new Personne_Metier(nom, prenom);
-            personne.InsertIntoBDD();
+            
 
             Console.ReadLine();
         }

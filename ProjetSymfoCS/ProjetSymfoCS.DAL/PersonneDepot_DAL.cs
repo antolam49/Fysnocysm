@@ -13,7 +13,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, nom, prenom from Personne";
+            commande.CommandText = "select ID, nom, prenom, idSoiree from Personne";
             var reader = commande.ExecuteReader();
 
             var listeDePersonnes = new List<Personne_DAL>();
@@ -22,7 +22,8 @@ namespace ProjetSymfoCS.DAL
             {
                 var p = new Personne_DAL(reader.GetInt32(0),
                                         reader.GetString(1),
-                                        reader.GetString(2));
+                                        reader.GetString(2),
+                                        reader.GetInt32(3));
 
                 listeDePersonnes.Add(p);
             }
@@ -36,7 +37,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, nom, prenom from Personne where ID=@ID";
+            commande.CommandText = "select ID, nom, prenom, idSoiree from Personne where ID=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
 
             var reader = commande.ExecuteReader();
@@ -47,7 +48,8 @@ namespace ProjetSymfoCS.DAL
             {
                 var p = new Personne_DAL(reader.GetInt32(0),
                                         reader.GetString(1),
-                                        reader.GetString(2));
+                                        reader.GetString(2),
+                                        reader.GetInt32(3));
 
                 listeDePersonnes.Add(p);
             }
@@ -61,14 +63,17 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, nom, prenom from Personne where ID=@ID";
+            commande.CommandText = "select ID, nom, prenom, idSoiree from Personne where ID=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
             var reader = commande.ExecuteReader();
 
             Personne_DAL result;
             if (reader.Read())
             {
-                result = new Personne_DAL(reader.GetInt32(0), reader.GetString(1), reader.GetString(2));
+                result = new Personne_DAL(reader.GetInt32(0),
+                                        reader.GetString(1),
+                                        reader.GetString(2),
+                                        reader.GetInt32(3));
             }
             else
             {
@@ -85,9 +90,10 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "insert into Personne(nom, prenom)" + " values (@Nom, @Prenom); select scope_identity()";
+            commande.CommandText = "insert into Personne(nom, prenom, idSoiree)" + " values (@Nom, @Prenom, @idSoiree); select scope_identity()";
             commande.Parameters.Add(new SqlParameter("@Nom", Personne.Nom));
             commande.Parameters.Add(new SqlParameter("@Prenom", Personne.Prenom));
+            commande.Parameters.Add(new SqlParameter("@idSoiree", Personne.IDSoiree));
             var ID = Convert.ToInt32((decimal)commande.ExecuteScalar());
 
             Personne.ID = ID;

@@ -33,7 +33,7 @@ namespace ProjetSymfoCS_Console
             var dateSoiree = DateTime.Parse(date, cultureInfo);
             Soiree_Metier soiree = new Soiree_Metier(lieu, dateSoiree);
             Soiree_Metier soireeD = new Soiree_Metier(lieu, dateSoiree);
-            soireeD = soiree.GetAllD();
+            
             
             return soiree;   
 

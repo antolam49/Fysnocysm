@@ -10,5 +10,10 @@
   <ItemGroup>
     <ProjectReference Include="..\ProjetSymfoCS.Metier\ProjetSymfoCS_Metier.csproj" />
   </ItemGroup>
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 
 </Project>

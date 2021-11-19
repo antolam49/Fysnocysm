@@ -13,3 +13,4 @@ C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Metier\obj\Deb
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Metier\obj\Debug\net6.0\ProjetSymfoCS_Metier.dll
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Metier\obj\Debug\net6.0\ref\ProjetSymfoCS_Metier.dll
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Metier\obj\Debug\net6.0\ProjetSymfoCS_Metier.pdb
+C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Metier\bin\Debug\net6.0\appsettings.json

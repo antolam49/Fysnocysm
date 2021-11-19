@@ -32,3 +32,4 @@ C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Console\bin\De
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Console\bin\Debug\net6.0\ProjetSymfoCS_Metier.pdb
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Console\bin\Debug\net6.0\ProjetSymfoCS_DAL.pdb
 C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Console\obj\Debug\net6.0\ProjetSymfoCS_Console.csproj.CopyComplete
+C:\Users\antol\Source\Repos\Fysnocysm\ProjetSymfoCS\ProjetSymfoCS.Console\bin\Debug\net6.0\appsettings.json

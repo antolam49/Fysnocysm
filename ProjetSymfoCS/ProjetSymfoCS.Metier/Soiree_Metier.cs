@@ -16,9 +16,23 @@ namespace ProjetSymfoCS.Metier
 
         public void InsertIntoBDD()
         {
+            List<Personne_DAL> list = new List<Personne_DAL>();
+            Console.WriteLine("Combien de personne a la soiree ? ");
+            string entry = Console.ReadLine();
+            int nb = Int32.Parse(entry);
+            for (int i = 0; i < nb; i++)
+            {
+                Console.WriteLine("Entrez votre nom: ");
+                string nom = Console.ReadLine();
+                Console.WriteLine("Entrez votre prenom: ");
+                string prenom = Console.ReadLine();
 
-            Soiree_DAL soiree = new Soiree_DAL(Lieu, Date);
-            soiree.Insert();
+                Personne_DAL personne = new Personne_DAL(nom, prenom);
+                list.Add(personne);
+            }
+            SoireeDepot_DAL soireeD = new SoireeDepot_DAL();
+            Soiree_DAL soiree = new Soiree_DAL(Lieu, Date, list);
+            soireeD.Insert(soiree);
         }
         public List<Soiree_DAL> GetAllD()
         {
@@ -27,12 +41,7 @@ namespace ProjetSymfoCS.Metier
             listeSoiree = soiree.GetAll();
             return listeSoiree;
         }
-        public Soiree_Metier GetList()
-        {
-            Soiree_Metier soiree = new Soiree_Metier();
-            var liste = soiree.GetAllD().ToList<SoireeDepot_DAL>;
-            return liste;
-        }
+        
       
         public int GetID()
         {

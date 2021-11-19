@@ -19,7 +19,7 @@ namespace ProjetSymfoCS.DAL
         public Depot_DAL()
         {
             var builder = new ConfigurationBuilder();
-            var config = builder.AddJsonFile("appsettings.json", true, true).Build();
+            var config = builder.AddJsonFile("appsettings.json", false, true).Build();
 
             ChaineDeConnexion = config.GetSection("ConnectionStrings:default").Value;
         }
