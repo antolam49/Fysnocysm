@@ -28,5 +28,13 @@ namespace ProjetSymfoCS_Console
             Personne_Metier personne = new Personne_Metier(nom, prenom);
             personne.GetAll(id);
         }
+        public static int GetNbParticipant(int id)
+        {
+            string nom = "Terrieur";
+            string prenom = "Alain";
+            Personne_Metier personne = new Personne_Metier(nom, prenom);
+            return personne.GetNbParticipant(id);
+        }
     }
+
 }

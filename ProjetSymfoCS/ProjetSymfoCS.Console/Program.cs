@@ -12,7 +12,7 @@ namespace ProjetSymfoCS_Console
         public static void Main(string[] args)
         {
             Console.WriteLine("Bonjour Bienvenue sur Fysnocysm !");
-            Console.WriteLine("1- Ajouter Utilisateur \n 2- Creer Soiree \n 3- Entrer une depense \n");
+            Console.WriteLine("1- Ajouter Utilisateur \n 2- Creer Soiree \n 3- Entrer une depense \n 4- Afficher les Depenses");
             Console.WriteLine("Veuillez choisir un nombre : ");
             string choix = Console.ReadLine();
 
@@ -40,11 +40,27 @@ namespace ProjetSymfoCS_Console
                     menuEntrerPrix(idSoiree, idPersonne);
 
                     break;
+                case "4":
+
+                    afficherSoirees();
+                    Console.WriteLine("Entrez le numero de votre soiree: ");
+                    string entry = Console.ReadLine();
+                    int IDSoiree = Int32.Parse(entry);
+                    double depenseTotal = afficherPrix(IDSoiree);
+                    int nbParticipant = afficherNbParticipant(IDSoiree);
+
+                    Console.ReadLine();
+
+                    break;
+
                 default:
 
                     Console.WriteLine("Vous n'avez choisis le bon nombre");
                     break;
             }
+
+
+
         }
         public static void menuAjouterPersonne()
         {
@@ -67,6 +83,14 @@ namespace ProjetSymfoCS_Console
         public static void menuEntrerPrix(int idSoiree, int idPersonne)
         {
             AjoutPrix.AjoutPrixIntoBDD(idSoiree, idPersonne);
+        }
+        public static double afficherPrix(int idSoiree)
+        {
+            return AjoutPrix.AfficherPrixByID(idSoiree);
+        }
+        public static int afficherNbParticipant(int idSoiree)
+        {
+            return AjoutPersonne.GetNbParticipant(idSoiree);
         }
     }
 }

@@ -22,5 +22,18 @@ namespace ProjetSymfoCS.Metier
             PrixDepot_DAL prixD =  new DAL.PrixDepot_DAL();
             prixD.Insert(prix);
         }
+        public double AfficherPrix(int idSoiree)
+        {
+            List<Prix_DAL> listP = new List<Prix_DAL>();
+            PrixDepot_DAL prixD = new DAL.PrixDepot_DAL();
+            listP = prixD.GetAllByIDSoiree(idSoiree);
+
+            double prixTotal = 0;
+            foreach (var item in listP)
+            {
+                prixTotal = prixTotal + item.Montant;
+            }
+            return prixTotal;
+        }
     }
 }

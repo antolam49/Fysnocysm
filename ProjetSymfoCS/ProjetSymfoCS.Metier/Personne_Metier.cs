@@ -28,6 +28,19 @@ namespace ProjetSymfoCS.Metier
                 Console.WriteLine(item.ID + (", ") + item.Nom + (", ") + item.Prenom);
             }
         }
+        public int GetNbParticipant(int id)
+        {
+            PersonneDepot_DAL personne = new PersonneDepot_DAL();
+            var listePersonne = new List<Personne_DAL>();
+
+            listePersonne = personne.GetAllByIDSoiree(id);
+            int nb = 0;
+            foreach (var item in listePersonne)
+            {
+                nb++;
+            }
+            return nb;
+        }
     }
    
 }

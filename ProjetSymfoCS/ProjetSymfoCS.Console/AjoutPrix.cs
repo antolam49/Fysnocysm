@@ -21,5 +21,13 @@ namespace ProjetSymfoCS_Console
             Console.ReadLine();
 
         }
+
+        public static double AfficherPrixByID(int idSoiree)
+        {
+            float montant = 0.1F;
+            int idPersonne = 0;
+            Prix_Metier prix = new Prix_Metier(montant, idSoiree, idPersonne);
+            return prix.AfficherPrix(idSoiree);
+        }
     }
 }
