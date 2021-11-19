@@ -19,7 +19,8 @@ namespace ProjetSymfoCS.Metier
         public void InsertIntoBDD()
         {
             Prix_DAL prix = new Prix_DAL(Montant, IDSoiree, IDPersonne);
-            prix.Insert();
+            PrixDepot_DAL prixD =  new DAL.PrixDepot_DAL();
+            prixD.Insert(prix);
         }
     }
 }

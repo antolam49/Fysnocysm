@@ -34,12 +34,16 @@ namespace ProjetSymfoCS.Metier
             Soiree_DAL soiree = new Soiree_DAL(Lieu, Date, list);
             soireeD.Insert(soiree);
         }
-        public List<Soiree_DAL> GetAllD()
+        public void GetAllD()
         {
             SoireeDepot_DAL soiree = new SoireeDepot_DAL();
             var listeSoiree = new List<Soiree_DAL>();
             listeSoiree = soiree.GetAll();
-            return listeSoiree;
+            foreach (var item in listeSoiree)
+            {
+                Console.WriteLine(item.ID + (", ") + item.Lieu + (", ") + item.Date);
+            }
+           
         }
         
       

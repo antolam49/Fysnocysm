@@ -25,17 +25,14 @@ namespace ProjetSymfoCS_Console
             Console.ReadLine();
 
         }
-        public static Soiree_Metier GetAllMetier()
+        public static void GetAllMetier()
         {
             string lieu = "Quelque part";
             string date = "21 Nov 2021";
             var cultureInfo = new CultureInfo("fr-FR");
             var dateSoiree = DateTime.Parse(date, cultureInfo);
             Soiree_Metier soiree = new Soiree_Metier(lieu, dateSoiree);
-            Soiree_Metier soireeD = new Soiree_Metier(lieu, dateSoiree);
-            
-            
-            return soiree;   
+            soiree.GetAllD();      
 
         }
         

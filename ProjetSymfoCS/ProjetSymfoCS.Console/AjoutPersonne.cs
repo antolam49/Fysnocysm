@@ -21,12 +21,12 @@ namespace ProjetSymfoCS_Console
 
             Console.ReadLine();
         }
-        public static void GetAll()
+        public static void GetAll(int id)
         {
             string nom = "Terrieur";
             string prenom = "Alain";
             Personne_Metier personne = new Personne_Metier(nom, prenom);
-            personne.GetAll();
+            personne.GetAll(id);
         }
     }
 }

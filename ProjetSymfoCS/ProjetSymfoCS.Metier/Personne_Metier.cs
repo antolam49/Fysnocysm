@@ -17,10 +17,16 @@ namespace ProjetSymfoCS.Metier
         public Personne_Metier(string nom, string prenom) => (Nom, Prenom) = (nom, prenom);
 
         
-        public void GetAll()
+        public void GetAll(int id)
         {
             PersonneDepot_DAL personne = new PersonneDepot_DAL();
-            personne.GetAll();
+            var listePersonne = new List<Personne_DAL>();
+            
+            listePersonne = personne.GetAllByIDSoiree(id);
+            foreach (var item in listePersonne)
+            {
+                Console.WriteLine(item.ID + (", ") + item.Nom + (", ") + item.Prenom);
+            }
         }
     }
    

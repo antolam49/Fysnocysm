@@ -35,7 +35,7 @@ namespace ProjetSymfoCS.DAL
                     commande.Parameters.Add(new SqlParameter("@idPersonne", IDPersonne));
                     commande.Parameters.Add(new SqlParameter("@idSoiree", IDSoiree));
 
-                    commande.ExecuteNonQuery();
+                    
 
 
                 }
