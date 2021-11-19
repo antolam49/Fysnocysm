@@ -937,25 +937,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adrie\\.nuget\\packages\\": {},
+    "C:\\Users\\antol\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj",
+      "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj",
       "projectName": "ProjetSymfoCS_Console",
-      "projectPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj",
-      "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\obj\\",
+      "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj",
+      "packagesPath": "C:\\Users\\antol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\antol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -971,8 +971,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj": {
-              "projectPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj"
+            "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj": {
+              "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj"
             }
           }
         }

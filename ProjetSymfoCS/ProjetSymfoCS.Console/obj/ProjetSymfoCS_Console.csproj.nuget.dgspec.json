@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj": {}
+    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj": {}
   },
   "projects": {
-    "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj": {
+    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj",
+        "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj",
         "projectName": "ProjetSymfoCS_Console",
-        "projectPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj",
-        "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\obj\\",
+        "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\ProjetSymfoCS_Console.csproj",
+        "packagesPath": "C:\\Users\\antol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\antol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -34,8 +34,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj": {
-                "projectPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj"
+              "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj": {
+                "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj"
               }
             }
           }
@@ -68,21 +68,21 @@
         }
       }
     },
-    "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj": {
+    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj",
+        "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj",
         "projectName": "ProjetSymfoCS_DAL",
-        "projectPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj",
-        "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\obj\\",
+        "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj",
+        "packagesPath": "C:\\Users\\antol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\antol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -142,21 +142,21 @@
         }
       }
     },
-    "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj": {
+    "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj",
+        "projectUniqueName": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj",
         "projectName": "ProjetSymfoCS_Metier",
-        "projectPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj",
-        "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\obj\\",
+        "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\ProjetSymfoCS_Metier.csproj",
+        "packagesPath": "C:\\Users\\antol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.Metier\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\antol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -172,8 +172,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj": {
-                "projectPath": "D:\\C#\\Synfo\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj"
+              "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj": {
+                "projectPath": "C:\\Users\\antol\\Source\\Repos\\Fysnocysm\\ProjetSymfoCS\\ProjetSymfoCS.DAL\\ProjetSymfoCS_DAL.csproj"
               }
             }
           }
