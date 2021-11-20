@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetSymfoCS_Metier", "Pro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetSymfoCS_Console", "ProjetSymfoCS.Console\ProjetSymfoCS_Console.csproj", "{83FF0C0D-69F7-4FD1-8FBC-C15E1493016C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetSymfoCS_Web", "ProjetSymfoCS_Web\ProjetSymfoCS_Web.csproj", "{5766072B-C2C2-44B8-9CF3-A18B7138E8F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetSymfoCS_Web", "ProjetSymfoCS_Web\ProjetSymfoCS_Web.csproj", "{5766072B-C2C2-44B8-9CF3-A18B7138E8F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
