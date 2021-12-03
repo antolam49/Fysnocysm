@@ -45,8 +45,6 @@ namespace ProjetSymfoCS.Metier
             }
            
         }
-        
-      
         public int GetID()
         {
             SoireeDepot_DAL soireeD = new SoireeDepot_DAL();

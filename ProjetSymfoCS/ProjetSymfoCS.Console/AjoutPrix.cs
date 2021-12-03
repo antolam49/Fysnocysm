@@ -21,5 +21,27 @@ namespace ProjetSymfoCS_Console
             Console.ReadLine();
 
         }
+
+        public static double AfficherPrixByID(int idSoiree)
+        {
+            float montant = 0.1F;
+            int idPersonne = 0;
+            Prix_Metier prix = new Prix_Metier(montant, idSoiree, idPersonne);
+            return prix.AfficherPrix(idSoiree);
+        }
+        public static double GetBalance(int nb, double depenseTotal, int nbParticipant, int idSoiree)
+        {
+            int depense = Convert.ToInt32(depenseTotal);
+            int moyenne =  depense / nbParticipant;
+            float montant = 0.1F;
+            int idPersonne = 0;
+            Prix_Metier prix = new Prix_Metier(montant, idSoiree, idPersonne);
+            List<double> balance = prix.AfficherPrixByParticipant(idSoiree);
+
+            int nbB = nb;
+            return balance[nbB];
+
+        }
+       
     }
 }
