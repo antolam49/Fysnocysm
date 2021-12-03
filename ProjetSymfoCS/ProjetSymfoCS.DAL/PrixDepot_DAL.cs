@@ -13,7 +13,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, motant, idPersonne, idSoiree from Prix";
+            commande.CommandText = "select ID, montant, idPersonne, idSoiree from Prix";
             var reader = commande.ExecuteReader();
 
             var listeDePrixs = new List<Prix_DAL>();
@@ -33,11 +33,11 @@ namespace ProjetSymfoCS.DAL
             return listeDePrixs;
         }
 
-        public List<Prix_DAL> GetAllByID(int ID)
+        public List<Prix_DAL> GetAllByIDSoiree(int ID)
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, motant, idPersonne, idSoiree from Prix where ID=@ID";
+            commande.CommandText = "select ID, montant, idPersonne from Prix where idSoiree=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
 
             var reader = commande.ExecuteReader();
@@ -47,9 +47,8 @@ namespace ProjetSymfoCS.DAL
             while (reader.Read())
             {
                 var p = new Prix_DAL(reader.GetInt32(0),
-                                        reader.GetFloat(1),
-                                        reader.GetInt32(2),
-                                        reader.GetInt32(3));
+                                        reader.GetDouble(1),
+                                        reader.GetInt32(2));
 
                 listeDePrixs.Add(p);
             }
@@ -63,7 +62,7 @@ namespace ProjetSymfoCS.DAL
         {
             CreerConnectionCommande();
 
-            commande.CommandText = "select ID, motant, idPersonne, idSoiree from Prix where ID=@ID";
+            commande.CommandText = "select ID, montant, idPersonne, idSoiree from Prix where ID=@ID";
             commande.Parameters.Add(new SqlParameter("@ID", ID));
             var reader = commande.ExecuteReader();
 
@@ -71,7 +70,7 @@ namespace ProjetSymfoCS.DAL
             if (reader.Read())
             {
                 result = new Prix_DAL(reader.GetInt32(0),
-                                        reader.GetFloat(1),
+                                        reader.GetDouble(1),
                                         reader.GetInt32(2),
                                         reader.GetInt32(3));
             }

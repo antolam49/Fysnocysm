@@ -10,14 +10,16 @@ namespace ProjetSymfoCS.DAL
     public class Prix_DAL
     {
         public int ID { get; set; }
-        public float Montant { get; set; }
+        public double Montant { get; set; }
         public int IDPersonne { get; set;}
         public int IDSoiree { get; set; }
 
         SqlConnection connexion = new SqlConnection();
-        public Prix_DAL(float montant, int idPersonne, int idSoiree) => (Montant, IDPersonne, IDSoiree)
+        public Prix_DAL(int id, double montant, int idPersonne) => (ID, Montant, IDPersonne)
+            = (id, montant, idPersonne);
+        public Prix_DAL(double montant, int idPersonne, int idSoiree) => (Montant, IDPersonne, IDSoiree)
             = (montant, idPersonne, idSoiree);
-        public Prix_DAL(int id, float montant, int idPersonne, int idSoiree) => (ID, Montant, IDPersonne, IDSoiree)
+        public Prix_DAL(int id, double montant, int idPersonne, int idSoiree) => (ID, Montant, IDPersonne, IDSoiree)
             = (id, montant, idPersonne, idSoiree);
 
         public void Insert()
