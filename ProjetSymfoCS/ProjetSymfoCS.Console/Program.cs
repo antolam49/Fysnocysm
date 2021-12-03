@@ -19,35 +19,34 @@ namespace ProjetSymfoCS_Console
             switch (choix)
             {
                 case "1":
-                    menuAjouterPersonne();
+                    AjoutPersonne.AjouterPersonne();
 
                     break;
                 case "2":
 
-                    menuCreerSoiree();
+                    CreationSoiree.CreerSoiree();
                     
                     break;
                 case "3":
-
-                    afficherSoirees();
+                    CreationSoiree.GetAllMetier();
                     Console.WriteLine("Entrez le numero de votre soiree: ");
                     string num = Console.ReadLine();
                     int idSoiree = Int32.Parse(num);
-                    afficherPersonnes(idSoiree);
+                    AjoutPersonne.GetAll(idSoiree);
                     Console.WriteLine("Qui etes vous ? Entrez votre numero: ");
                     string numP = Console.ReadLine();
                     int idPersonne = Int32.Parse(numP);
-                    menuEntrerPrix(idSoiree, idPersonne);
+                    AjoutPrix.AjoutPrixIntoBDD(idSoiree, idPersonne);
 
                     break;
                 case "4":
 
-                    afficherSoirees();
+                    CreationSoiree.GetAllMetier();
                     Console.WriteLine("Entrez le numero de votre soiree: ");
                     string entry = Console.ReadLine();
                     int IDSoiree = Int32.Parse(entry);
-                    double depenseTotal = afficherPrix(IDSoiree);
-                    int nbParticipant = afficherNbParticipant(IDSoiree);
+                    double depenseTotal = AjoutPrix.AfficherPrixByID(IDSoiree);
+                    int nbParticipant = AjoutPersonne.GetNbParticipant(IDSoiree);
                     List<double> balances = new List<double>();
 
                     int moyenne = Convert.ToInt32(depenseTotal) / nbParticipant;
@@ -126,36 +125,10 @@ namespace ProjetSymfoCS_Console
 
 
         }
-        public static void menuAjouterPersonne()
-        {
-
-            AjoutPersonne.AjouterPersonne();
-        }
-        public static void menuCreerSoiree()
-        {
-            CreationSoiree.CreerSoiree();
-        }
-        public static void afficherSoirees()
-        {
-            CreationSoiree.GetAllMetier();
-        }
-        public static void afficherPersonnes(int id)
-        {
-            AjoutPersonne.GetAll(id);
-        }
         
-        public static void menuEntrerPrix(int idSoiree, int idPersonne)
-        {
-            AjoutPrix.AjoutPrixIntoBDD(idSoiree, idPersonne);
-        }
-        public static double afficherPrix(int idSoiree)
-        {
-            return AjoutPrix.AfficherPrixByID(idSoiree);
-        }
-        public static int afficherNbParticipant(int idSoiree)
-        {
-            return AjoutPersonne.GetNbParticipant(idSoiree);
-        }
+        
+       
+        
         public static double Balance(int nb, double depense, int nbParticipant, int idSoiree)
         {
             return AjoutPrix.GetBalance(nb, depense, nbParticipant, idSoiree); 

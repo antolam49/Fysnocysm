@@ -5,13 +5,61 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<h2>Dans quel soirée êtes vous ?</h2>
+    <div class="form-group">
+        <label for="Nom">Ou se situe votre soirée ?</label>
+        <input type="text" class="form-control" id="nometude" maxlength="150"
+               name="nom"
+               placeholder="Entrez le nom de l'espece..." required>
+    </div>
+    
+    <label for="Nb">Combien de personne ?</label>
+    <input type="text" class="form-control" id="Nb" maxlength="150"
+                       name="Nb"
+                       placeholder="Entrez le nombre de participant..." required>
+
+<!--
+    <script>
+    function controle(){
+         var saisie = document.getElementById("Nb").value;
+         
+         for (int i = 1; i < saisie; i++){
+
+        <p> <div class="form-group">
+                <label for="nomP">Entrer le Nom</label>
+                <input type="text" class="form-control" id="nomP" maxlength="150"
+                       name="nomP"
+                       placeholder="Entrez le nom du participant..." required>
+            </div>
+            <div class="form-group">
+                <label for="prenomP">Entrer le Prenom</label>
+                <input type="text" class="form-control" id="prenomP" maxlength="150"
+                       name="prenomP"
+                       placeholder="Entrez le prenom du participant..." required>
+            </div>    
+        </p>
+         }
+    }
+    
+    </script>
+    -->
+           <div class="form-group">
+                <label for="nomP">Entrer le Nom</label>
+                <input type="text" class="form-control" id="nomP" maxlength="150"
+                       name="nomP"
+                       placeholder="Entrez le nom du participant..." required>
+            </div>
+            <div class="form-group">
+                <label for="prenomP">Entrer le Prenom</label>
+                <input type="text" class="form-control" id="prenomP" maxlength="150"
+                       name="prenomP"
+                       placeholder="Entrez le prenom du participant..." required>
+             </div>
+                       
+                  
+    <input type="button" id="button" value="Valider" onClick="controle()">
 
 
+    
 
-<select class="form-select" aria-label="Disabled select example" disabled>
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
+
+   
