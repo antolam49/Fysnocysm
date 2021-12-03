@@ -30,7 +30,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Fichiers divers",
       "ColorIndex": -1
+    },
+    "5766072b-c2c2-44b8-9cf3-a18b7138e8f7": {
+      "ProjectGuid": "5766072b-c2c2-44b8-9cf3-a18b7138e8f7",
+      "DisplayName": "ProjetSymfoCS_Web",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }
