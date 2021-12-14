@@ -47,22 +47,34 @@ namespace ProjetSymfoCS_DAL_Tests
             var depot = new PrixDepot_DAL();
             var prix = new Prix_DAL(montant:14,1,1);
             depot.Insert(prix);
+            var prixB = depot.GetByID(prix.ID);
 
-            Assert.NotNull(prix);
-            Assert.Equal(14, prix.Montant);
-            Assert.Equal(1, prix.IDPersonne);
-            Assert.Equal(1, prix.IDSoiree);
+            Assert.NotNull(prixB);
+            Assert.Equal(14, prixB.Montant);
+            Assert.Equal(1, prixB.IDPersonne);
+            Assert.Equal(1, prixB.IDSoiree);
             
 
             prix.Montant = 17;
             depot.Update(prix);
+            prixB = depot.GetByID(prix.ID);
 
-            Assert.NotNull(prix);
-            Assert.Equal(17, prix.Montant);
+            Assert.NotNull(prixB);
+            Assert.Equal(17, prixB.Montant);
 
             depot.Delete(prix);
 
-            Assert.Null(prix);
+            try
+            {
+               prixB = depot.GetByID(prix.ID);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+           
         }
 
         

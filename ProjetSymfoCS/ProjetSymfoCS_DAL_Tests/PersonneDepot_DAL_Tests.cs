@@ -46,22 +46,34 @@ namespace ProjetSymfoCS_DAL_Tests
         {
             var depot = new PersonneDepot_DAL();
             var personne = new Personne_DAL("Jean", "Test");
+            
             depot.Insert(personne);
+            var personneB = depot.GetByID(personne.ID);
 
-            Assert.NotNull(personne);
-            Assert.Equal("Jean", personne.Nom);
-            Assert.Equal("Test", personne.Prenom);
+
+            Assert.NotNull(personneB);
+            Assert.Equal("Jean", personneB.Nom);
+            Assert.Equal("Test", personneB.Prenom);
 
             personne.Nom = "Petit";
             depot.Update(personne);
+            personneB = depot.GetByID(personne.ID);
 
-            Assert.NotNull(personne);
-            Assert.Equal("Petit", personne.Nom);
-            Assert.Equal("Test", personne.Prenom);
+            Assert.NotNull(personneB);
+            Assert.Equal("Petit", personneB.Nom);
+            Assert.Equal("Test", personneB.Prenom);
 
             depot.Delete(personne);
 
-            Assert.Null(personne);
+            try
+            {
+                personneB = depot.GetByID(personne.ID);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         

@@ -47,21 +47,30 @@ namespace ProjetSymfoCS_DAL_Tests
             var depot = new SoireeDepot_DAL();
             var Soiree = new Soiree_DAL(1,"Test",DateTime.Now);
             depot.Insert(Soiree);
+            var SoireeB = depot.GetByID(Soiree.ID);
 
-            Assert.NotNull(Soiree);
-            Assert.Equal(DateTime.Now, Soiree.Date);
-            Assert.Equal("Test", Soiree.Lieu);
+            Assert.NotNull(SoireeB);
+            Assert.Equal(DateTime.Now, SoireeB.Date);
+            Assert.Equal("Test", SoireeB.Lieu);
 
             Soiree.Lieu = "SecondTest";
             depot.Update(Soiree);
+            SoireeB = depot.GetByID(Soiree.ID);
 
-            Assert.NotNull(Soiree);
-            Assert.Equal(DateTime.Now, Soiree.Date);
-            Assert.Equal("SecondTest", Soiree.Lieu);
+            Assert.NotNull(SoireeB);
+            Assert.Equal("SecondTest", SoireeB.Lieu);
 
             depot.Delete(Soiree);
-
-            Assert.Null(Soiree);
+            try
+            {
+                SoireeB = depot.GetByID(Soiree.ID);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+           
         }
 
         
