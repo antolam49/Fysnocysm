@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProjetSymfoCS"
+    "\\ProjetSymfoCS",
+    "\\ProjetSymfoCS\\ProjetSymfoCS_DAL_Tests"
   ],
-  "SelectedNode": "\\ProjetSymfoCS\\ProjetSymfoCS.sln",
+  "SelectedNode": "\\ProjetSymfoCS\\ProjetSymfoCS_DAL_Tests\\PersonneDepot_DAL_Tests.cs",
   "PreviewInSolutionExplorer": false
 }
